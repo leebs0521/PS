@@ -31,7 +31,6 @@ int main(){
     memset(hor,false,100);
 
     cin >> n >> str;
-
     x = 0, y = 0;
 
     for(i=0;i<str.size();i++){
