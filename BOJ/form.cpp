@@ -1,7 +1,8 @@
 /*
     BOJ [문제 넘버] - [이름]
-    url: [url]
+    url: https://www.acmicpc.net/problem/[문제 넘버]
     [Tier]
+    date: 
 */
 
 #include <iostream>
