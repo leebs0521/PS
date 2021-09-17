@@ -38,7 +38,8 @@ int main(){
     stack<int> s;
 
     cin >> n;
-    while(n-->=0){
+    cin.ignore();
+    while(n--){
         int item;
 
         //한줄 씩 입력 받아서 parsing 함수를 통해 명령어 파싱
