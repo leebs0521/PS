@@ -21,8 +21,7 @@ int main(){
     cin >> n;
 
     vector<int> arr(n), ans(n,-1);
-    map<int, int> m;
-    stack<int> s;
+    stack<pair<int, int>> s;
 
     for(int i=0; i<n ;i++) {
         int input;
@@ -31,15 +30,16 @@ int main(){
         visited[input]++;
     }
 
-    for(int i=0;i<n;i++){
+    for(int i=n-1;i>=0;i--){
 
-        while(!s.empty() && visited[s.top()+1] < visited[arr[i]+1]){
-            
-            ans[s.top()] = arr[i];
+        while(!s.empty() && visited[arr[i]] >= s.top().first){
             s.pop();
-            
         }
-        s.push(i);
+
+        if(!s.empty())
+            ans[i] = s.top().second;
+
+        s.push({visited[arr[i]], arr[i]});
     }
 
     for(int i=0; i<n; i++){
