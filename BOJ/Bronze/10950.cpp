@@ -1,0 +1,27 @@
+/*
+    BOJ 10950 - A+B -3
+    url: https://www.acmicpc.net/problem/10950
+    Bronze 3
+    date: 2021. 9. 26
+*/
+
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
+
+    int n;
+    cin >> n;
+    while(n--){
+        int a, b;
+
+        cin >> a >> b;
+
+        cout << a+b << "\n";
+    }
+
+    
+    return 0;
+}
