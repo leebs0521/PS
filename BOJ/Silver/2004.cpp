@@ -11,8 +11,8 @@ using namespace std;
 
 long long countX(long long a, long long x){
 
-    int sum = 0;
-    for(int i=x;a/i>=1;i*=x){
+    long long sum = 0;
+    for(long long i=x;a/i>=1;i*=x){
         sum += a/i;
     }
 
