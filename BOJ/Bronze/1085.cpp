@@ -12,12 +12,12 @@ using namespace std;
 int main(){
     ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
 
-    int x,y,w,h, row, col;
+    int x,y,w,h, r, c;
 
     cin >> x >> y >> w >> h;
 
-    row = min(x, abs(w-x));
-    col = min(y, abs(h-y));
+    r = min(x, abs(w-x));
+    c = min(y, abs(h-y));
 
     cout << min(row, col);
 
