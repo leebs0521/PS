@@ -35,10 +35,7 @@ int main(){
         cin >> arr[i];
         high = max(high, arr[i]);
     }
-    if(N == K){
-        cout << high << endl;
-        return 0;
-    }
+    
     while(low <= high){
         long long mid = (low+high)/2;
         bool flag = check(mid);
