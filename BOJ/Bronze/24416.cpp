@@ -2,7 +2,7 @@
     BOJ 24416 - 알고리즘 수업 - 피보나치 수 1
     url: https://www.acmicpc.net/problem/24416
     Bronze 1
-    date: 2022. 8. 7
+    date: 2022. 8. 8
 */
 
 #include <iostream>
